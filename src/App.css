@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  background-color: rgb(256, 256, 256);
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+}
+
+.divIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.navbar {
+  margin-right: 3rem;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.grid {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mission {
+  padding: 1.5rem;
+}
+
+.ul {
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.ul li {
+  list-style: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-pills a {
+  color: #000;
+}
+
+.navbar .nav-pills .active {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
