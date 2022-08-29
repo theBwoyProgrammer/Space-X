@@ -20,7 +20,7 @@ body {
   margin-left: 3rem;
 }
 
-.nav {
+.navbar {
   margin-right: 3rem;
 }
 
@@ -50,4 +50,14 @@ body {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.nav-pills a {
+  color: #000;
+}
+
+.navbar .nav-pills .active {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
 }

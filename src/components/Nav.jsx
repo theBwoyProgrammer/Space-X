@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes, NavLink } from 'react-router-dom';
 import Rockets from './Rockets';
+import favicon from './Assets/saturn.png';
 import Profile from './Profile';
 import Missions from './Missions';
 
@@ -8,13 +9,21 @@ const Nav = () => (
   <>
     <header className="header">
       <div className="divIcon">
-        <h6>icon</h6>
-        <h1>Space Travel`s` Hub</h1>
+        <img src={favicon} alt="fjstudio" height={50} width={50} />
+        <h1>Space Travel&apos;s Hub</h1>
       </div>
-      <nav className="nav">
-        <NavLink className="link" to="/Rockets">rockets</NavLink>
-        <NavLink className="link" to="/Missions">missions</NavLink>
-        <NavLink className="link" to="/Profile">my profile</NavLink>
+      <nav className="navbar">
+        <div className="nav-pills">
+          <NavLink className="link" to="/Rockets">
+            Rockets
+          </NavLink>
+          <NavLink className="link" to="/Missions">
+            Missions
+          </NavLink>
+          <NavLink className="link" to="/Profile">
+            My profile
+          </NavLink>
+        </div>
       </nav>
     </header>
     <Routes>

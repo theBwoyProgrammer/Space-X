@@ -5,15 +5,9 @@ const Profile = () => (
     <div className="mission">
       <h3>My missions</h3>
       <ul className="ul">
-        <li>
-          testar
-        </li>
-        <li>
-          teslar
-        </li>
-        <li>
-          tess
-        </li>
+        <li>testar</li>
+        <li>teslar</li>
+        <li>tess</li>
       </ul>
     </div>
     <div className="mission">
@@ -24,7 +18,6 @@ const Profile = () => (
         <li>sawn</li>
       </ul>
     </div>
-
   </div>
 );
 
