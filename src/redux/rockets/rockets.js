@@ -1,11 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const GET_MISSION = 'missions/mission/GET_MISSION';
-const BASE_URL = 'https://api.spacexdata.com/v3/missions';
+const FETCH_ROCKET = 'rockets/rocket/FETCH_ROCKET';
+const BASE_URL = 'https://api.spacexdata.com/v3/rockets';
 const initialState = [];
 
-export const getMission = createAsyncThunk(
-  GET_MISSION,
+export const getRockets = createAsyncThunk(
+  FETCH_ROCKET,
   async () => {
     const data = await fetch(`${BASE_URL}`);
     const response = await data.json();
@@ -13,12 +13,12 @@ export const getMission = createAsyncThunk(
   },
 );
 
-const missionResucer = (state = initialState, action) => {
+const rockets = (state = initialState, action) => {
   switch (action.type) {
-    case `${GET_MISSION}`:
+    case `${FETCH_ROCKET}`:
       return [...state, action.payload];
     default: return state;
   }
 };
 
-export default missionResucer;
+export default rockets;

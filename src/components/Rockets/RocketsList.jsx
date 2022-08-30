@@ -1,21 +1,20 @@
-import React from 'react';
-import Rockets from './Rockets';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getRockets } from '../../redux/rockets/rockets';
 
-function RocketsList() {
-  const state = {
-    title: 'Falcon 1',
-    descrip: 'Lorem Ipsum is a text used by developers for draft works showing where texts will appear',
-  };
+const SkyRockets = () => {
+  const skyRoc = useSelector((state) => state.mission);
+  console.log(skyRoc);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getRockets());
+  }, []);
+
   return (
-    <>
-      <div>
-        <Rockets
-          title={state.title}
-          descrip={state.descrip}
-        />
-      </div>
-    </>
+    <div>
+      Rockets here.
+    </div>
   );
-}
+};
 
-export default RocketsList;
+export default SkyRockets;
