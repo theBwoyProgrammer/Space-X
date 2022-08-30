@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes, NavLink } from 'react-router-dom';
-import Rockets from './Rockets';
+import RocketsList from './Rockets/RocketsList';
 import favicon from './Assets/saturn.png';
 import Profile from './Profile';
 import Missions from './Missions';
@@ -14,7 +14,7 @@ const Nav = () => (
       </div>
       <nav className="navbar">
         <div className="nav-pills">
-          <NavLink className="link" to="/Rockets">
+          <NavLink className="link" to="/RocketsList">
             Rockets
           </NavLink>
           <NavLink className="link" to="/Missions">
@@ -27,7 +27,7 @@ const Nav = () => (
       </nav>
     </header>
     <Routes>
-      <Route path="/Rockets" element={<Rockets />} />
+      <Route path="/RocketsList" element={<RocketsList />} />
       <Route path="/Missions" element={<Missions />} />
       <Route path="/profile" element={<Profile />} />
     </Routes>
