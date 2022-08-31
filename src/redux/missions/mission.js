@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_MISSION = 'missions/mission/GET_MISSION';
@@ -9,7 +10,18 @@ export const getMission = createAsyncThunk(
   async () => {
     const data = await fetch(`${BASE_URL}`);
     const response = await data.json();
-    return response;
+    const arry = [];
+    response.map((res) => {
+      arry.push(
+        {
+          id: res.mission_id,
+          Mname: res.mission_name,
+          description: res.description,
+        },
+      );
+      return res;
+    });
+    return arry;
   },
 );
 
