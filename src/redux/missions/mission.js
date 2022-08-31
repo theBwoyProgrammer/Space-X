@@ -9,14 +9,14 @@ export const getMission = createAsyncThunk(
   async () => {
     const data = await fetch(`${BASE_URL}`);
     const response = await data.json();
-    console.log(response);
+    return response;
   },
 );
 
 const missionResucer = (state = initialState, action) => {
   switch (action.type) {
-    case `${GET_MISSION}`:
-      return [...state, action.payload];
+    case `${GET_MISSION}/fulfilled`:
+      return action.payload;
     default: return state;
   }
 };
