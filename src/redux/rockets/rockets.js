@@ -9,7 +9,6 @@ export const getRockets = createAsyncThunk(
   async () => {
     const data = await fetch(`${BASE_URL}`);
     const response = await data.json();
-    console.log(response);
     const arr = [];
     response.map((res) => {
       arr.push(
