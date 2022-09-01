@@ -68,10 +68,12 @@ li {
 
 .rockets {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
-  margin-top: 30px;
+}
+
+.heads {
+  font-weight: 500;
 }
 
 .namerow {
