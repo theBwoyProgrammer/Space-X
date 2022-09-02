@@ -7,7 +7,9 @@ const SkyRockets = () => {
   const skyRoc = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRockets());
+    if (skyRoc.length === 0) {
+      dispatch(getRockets());
+    }
   }, [dispatch]);
 
   const reserve = (e) => {
