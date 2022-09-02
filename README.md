@@ -7,15 +7,30 @@
 ## Built With
 
 -react
+- bootstraps
 -redux
-**To get this project locally.**
-## Run this command on your terminal
+**To get this project locally**
+
+## Run the following command on your terminal
 
 
 ```
 git clone https://github.com/businesskaniki/spacex.git
 
 ```
+```
+cd spacex
+
+```
+```
+npm install
+
+```
+```
+npm start
+
+```
+
 ## Authors
 
 👤 **Author1**
