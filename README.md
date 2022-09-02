@@ -1,7 +1,7 @@
 
 # Project Name
 
->spacex project .
+> this project helps you keep track of reserved missions and rockets on ypor profile add or remove the on your profile.
 
 
 ## Built With
@@ -9,6 +9,7 @@
 -react
 - bootstraps
 -redux
+
 **To get this project locally**
 
 ## Run the following command on your terminal
