@@ -6,9 +6,9 @@
 
 ## Built With
 
--react
+- react
 - bootstraps
--redux
+- redux
 
 **To get this project locally**
 
