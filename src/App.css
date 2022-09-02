@@ -44,6 +44,8 @@ li {
 }
 
 .ul {
+  margin: 0;
+  padding: 0;
   border: 1px solid gray;
   border-radius: 4px;
 }
@@ -52,17 +54,16 @@ li {
   list-style: none;
   border-bottom: 1px solid gray;
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 2rem;
 }
 
 .nav-pills a {
-  color: #000;
+  color: skyblue;
 }
 
 .navbar .nav-pills .active {
   text-decoration: underline;
-  color: #000;
+  color: skyblue;
   font-weight: bold;
 }
 
@@ -80,4 +81,8 @@ li {
   display: flex;
   flex-direction: column;
   line-height: 20px;
+}
+
+.tabledata {
+  width: 1000px;
 }

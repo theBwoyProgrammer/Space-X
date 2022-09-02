@@ -36,7 +36,7 @@ const Missions = () => {
         {missions.map((mission) => (
           <tr key={mission.id} id={mission.id}>
             <td>{mission.Mname}</td>
-            <td>
+            <td className="tabledata">
               {mission.description}
             </td>
             <td>
