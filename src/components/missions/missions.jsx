@@ -5,10 +5,11 @@ import { getMission, joinMissions, leaveMissions } from '../../redux/missions/mi
 
 const Missions = () => {
   const missions = useSelector((state) => state.mission);
-  console.log(missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMission());
+    if (missions.length === 0) {
+      dispatch(getMission());
+    }
   }, [dispatch]);
 
   const joinmission = (e) => {
