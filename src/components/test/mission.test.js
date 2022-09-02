@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import store from '../../redux/configstore';
 import Missions from '../missions/missions';
 
-describe('Profile', () => {
-  test('should match profile snapshot', () => {
+describe('mission', () => {
+  test('should match mission snapshot', () => {
     const tree = render(
       <Provider store={store}>
         <Missions />

@@ -58,12 +58,12 @@ li {
 }
 
 .nav-pills a {
-  color: skyblue;
+  color: #0b5ed7;
 }
 
 .navbar .nav-pills .active {
   text-decoration: underline;
-  color: skyblue;
+  color: #0b5ed7;
   font-weight: bold;
 }
 

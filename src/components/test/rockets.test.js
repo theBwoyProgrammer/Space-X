@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import store from '../../redux/configstore';
 import Rockets from '../Rockets/RocketsList';
 
-describe('Profile', () => {
-  test('should match profile snapshot', () => {
+describe('rockest', () => {
+  test('should match rockets snapshot', () => {
     const tree = render(
       <Provider store={store}>
         <Rockets />
