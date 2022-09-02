@@ -35,15 +35,15 @@ npm start
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+-- GitHub: [@githubhandle](https://github.com/businesskaniki)
+- Twitter: [@twitterhandle](https://twitter.com/kaniki7346)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/buinesskaniki)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+GitHub: [@githubhandle](https://github.com/Hatimdev)
+- Twitter: [@twitterhandle](https://twitter.com/Hatim)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hatimdev/)
 
 ## 🤝 Contributing
 
